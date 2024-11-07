@@ -1,0 +1,81 @@
+/* Homepage css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.welcome {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.events {
+    padding: 1.5rem;
+}
+
+.events table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.events th, .events td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.bulletin-board {
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+}
+
+.bulletin-board .post {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}

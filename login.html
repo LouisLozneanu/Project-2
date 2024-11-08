@@ -19,19 +19,19 @@
                 <!-- Email -->
                 <div class="input-group">
                   <span class="icon"><i class="fas fa-envelope"></i></span>
-                  <input id="email" maxlength="64" name="email" size="48" type="email" placeholder="Email" required="required">
+                  <input id="email" maxlength="64" name="email" size="48" style="width: 200px;" value="" type="email" placeholder="Email" data-validate="{ required: true, format: 'email', help: 'Email address is required.' }" autocomplete="off" spellcheck="false" class="maxlength_enabled" required="required">
                 </div>
                 <!-- Password -->
                 <div class="input-group">
                   <span class="icon"><i class="fas fa-lock"></i></span>
-                  <input id="password" maxlength="64" name="password" size="48" type="password" placeholder="Password" required="required">
+                  <input id="password" maxlength="64" name="password" size="48" style="width: 200px;" type="password" placeholder="Password" value="" data-validate="{ required: true, help: 'Password is required.' }" autocomplete="off" spellcheck="false" required="required">
                 </div>
                 <!-- Forgot Password Link -->
                 <div class="forgot-password">
                   <a href="/forgot-password">Forgot Password?</a>
                 </div>
                 <!-- Login Button -->
-                <button class="btn default" type="submit">Login</button>
+                <button class="btn default" onclick="if (FW.Validate(this)) FW.Postback(this); return false;" type="submit">Login</button>
               </form>
               <!-- Divider -->
               <div class="divider">

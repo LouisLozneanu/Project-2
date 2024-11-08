@@ -42,7 +42,7 @@ body {
     padding: 20px;
 }
 
-#register_form {
+#register_form,#login_form {
     display: flex;
     flex-direction: column;
     gap: 15px;

@@ -12,8 +12,8 @@ document.getElementById("change-image-btn").addEventListener("click", function()
   header.style.backgroundImage = `url('${images[currentImageIndex]}')`;
   header.style.backgroundSize = "cover";
   header.style.backgroundPosition = "center";
-  header.style.backgroundRepeat = "repeat";
-  header.style.height = "2.5rem";
+  header.style.backgroundRepeat = "no-repeat";
+  header.style.height = "3rem";
 
   currentImageIndex = (currentImageIndex + 1) % images.length;
 });

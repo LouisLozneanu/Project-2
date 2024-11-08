@@ -16,7 +16,8 @@
   <div class="container">
     <div class="form-container">
       <h1 class="title">Register</h1>
-      <form id="registerForm" class="form">
+      <form id="register_form" method="post" onsubmit="return false;" novalidate="novalidate" data-fw-form="1"
+        autocomplete="off">
         <!-- First Name -->
         <div class="input-group">
           <span class="icon"><i class="fas fa-user"></i></span>
@@ -30,7 +31,9 @@
         <!-- Email -->
         <div class="input-group">
           <span class="icon"><i class="fas fa-envelope"></i></span>
-          <input type="email" name="email" placeholder="Email" required>
+          <input id="email" maxlength="64" name="email" size="48" type="email" placeholder="Email" value=""
+            data-validate="{ required: true, format: 'email', help: 'Email address is required.' }" autocomplete="off"
+            spellcheck="false" class="maxlength_enabled" required="required">
         </div>
         <!-- Date of Birth -->
         <div class="input-group">
@@ -39,11 +42,12 @@
         </div>
 
         <!-- Register Button -->
-        <button type="submit" class="btn">Register</button>
+        <button type="submit" class="btn">Continue</button>
       </form>
       <!-- Divider -->
       <div class="divider">
-        <hr> Or <hr>
+        <hr> Or
+        <hr>
       </div>
       <!-- Login Button -->
       <button id="loginBtn" class="btn">LOG IN</button>

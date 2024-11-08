@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Sign Up Successful!\nDate of Birth: " + birthdate);
   
         // Redirect to login page
-        window.location.href = "/login.html";
+        window.location.href = "/Project-2/login.html";
       });
     }
   

@@ -14,8 +14,11 @@
 
 <body>
   <div class="container">
-    <div class="form-container">
-      <h1 class="title">Register</h1>
+    <div class="siteTitle">
+      <h1>Yale School of Art</h1>
+    </div>
+    <div class="formContainer">
+      <h1 class="pageTitle">Register</h1>
       <form id="register_form" method="post" onsubmit="return false;" novalidate="novalidate" data-fw-form="1"
         autocomplete="off">
         <!-- First Name -->
@@ -212,7 +215,7 @@
         </div>
 
         <!-- Register Button -->
-        <button type="submit" class="btn">Continue</button>
+        <button class="btn default" onclick="if (FW.Validate(this)) FW.Postback(this, { cmd: 'submit' }); return false;" type="submit">Continue</button>
       </form>
       <!-- Divider -->
       <div class="divider">
@@ -223,7 +226,7 @@
       <button id="loginBtn" class="btn">LOG IN</button>
     </div>
   </div>
-  <script src="/script.js" async defer></script>
+  <script src="/js/script.js" async defer></script>
 </body>
 
 </html>

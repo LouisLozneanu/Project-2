@@ -4,59 +4,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-  }
+}
 
-  .container {
+.container {
     width: 100%;
     max-width: 400px;
-    padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .title {
+}
+
+.siteTitle {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    background-color: #2960A0;
+}
+
+.pageTitle {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-  }
-  
-  #register_form {
+}
+
+.formContainer {
+    padding: 20px;
+}
+
+#register_form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .input-group {
+}
+
+.input-group {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  .icon {
-    margin-right: 10px;
-  }
+}
 
-  input {
+.icon {
+    margin-right: 10px;
+}
+
+input {
     width: 100%;
     padding: 8px;
     border: none;
     outline: none;
-  }
-  
-  .btn {
+}
+
+.btn {
     background-color: #007bff;
     color: white;
     padding: 10px;
@@ -64,26 +75,42 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
+}
 
-  #loginBtn{
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#loginBtn {
     width: 100%;
-  }
-  
-  .divider {
+}
+
+.divider {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 20px 0;
-  }
-  
-  .divider hr {
+}
+
+.divider hr {
     flex: 1;
     border: none;
     height: 1px;
     background-color: #ccc;
-  }
+}
+
+#birthdate {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#birthdate select {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+}

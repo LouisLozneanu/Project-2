@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     background-color: #0f4d92;
-    padding: 1rem;
+    padding: 3rem;
     color: #fff;
     position: relative;
   }
@@ -51,6 +51,11 @@
     background-color: #555;
   }
   
+  nav:hover ul li {
+    display: block;
+    width: 100%;
+  }
+  
   nav::before {
     content: "☰";
     font-size: 2rem;
@@ -60,8 +65,17 @@
     padding: 0.5rem;
   }
   
-  nav:hover ul li {
+  #change-image-btn {
+    display: none;
+    margin-top: 30px;
+    padding: 0.5rem 1rem;
+    background-color: #0f4d92;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav:hover #change-image-btn {
     display: block;
-    width: 100%;
   }
   

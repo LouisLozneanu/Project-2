@@ -68,6 +68,7 @@ input {
 }
 
 .btn {
+    width: 100%;
     background-color: #007bff;
     color: white;
     padding: 10px;
@@ -79,10 +80,6 @@ input {
 
 .btn:hover {
     background-color: #0056b3;
-}
-
-#loginBtn {
-    width: 100%;
 }
 
 .divider {

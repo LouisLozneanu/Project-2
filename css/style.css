@@ -1,4 +1,152 @@
-/* Homepage css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f4d92;
+    padding: 3rem;
+    color: #fff;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  nav {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    position: relative;
+    top: 30px;
+  }
+  
+  nav ul li {
+    display: none;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    background-color: #444;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  nav:hover ul li {
+    display: block;
+    width: 100%;
+  }
+  
+  nav::before {
+    content: "☰";
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  
+  #change-image-btn {
+    display: none;
+    margin-top: 3rem;
+    padding: 1rem 1rem;
+    background-color: #0f4d92;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav:hover #change-image-btn {
+    display: block;
+  }
+
+  .main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .main p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }  
+  
+  .main a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #0f4d92;
+    padding: 0 3px;
+  }
+
+  /* Tablet Screens (768px and above) */
+@media (min-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+  .main h2 {
+      font-size: 2.5em;
+  }
+  .main p {
+      font-size: 1.2em;
+  }
+  nav ul li a {
+      padding: 1rem 2rem;
+  }
+  #change-image-btn {
+      padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Desktop Screens (1024px and above) */
+@media (min-width: 1024px) {
+  header {
+      padding: 4rem;
+  }
+  header h1 {
+      font-size: 2.5rem;
+  }
+  .main {
+      max-width: 1000px;
+  }
+  .main h2 {
+      font-size: 3em;
+  }
+  .main p {
+      font-size: 1.3em;
+  }
+  nav ul {
+      top: 40px;
+  }
+}
+
+/* Register and Login CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,75 +155,106 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2rem;
-}
-
-nav ul {
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin-top: 1rem;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section.welcome {
-    background-color: #f4f4f4;
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.events {
-    padding: 1.5rem;
-}
-
-.events table {
+.container {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-.events th, .events td {
-    border: 1px solid #ddd;
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.bulletin-board {
-    padding: 1.5rem;
-    background-color: #f4f4f4;
-}
-
-.bulletin-board .post {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin-top: 1rem;
+    max-width: 400px;
     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+.siteTitle {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    background-color: #2960A0;
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.8rem;
+}
+
+.formContainer {
+    padding: 20px;
+}
+
+#register_form,#login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+#birthdate {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#birthdate select {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
 }

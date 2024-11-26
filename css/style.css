@@ -1,14 +1,20 @@
-/* Reset and Global Styles */
+/* Base Styles */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    line-height: 1.5;
     color: #333;
+    background-color: #f0f0f0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Header */
@@ -25,6 +31,7 @@ header {
 header h1 {
     font-size: 1.5rem;
     text-align: center;
+    margin: 0; /* Explicit reset */
 }
 
 /* Navigation Bar */
@@ -35,9 +42,11 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Ensures no bullets appear */
     position: relative;
     top: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -70,12 +79,31 @@ nav::before {
     padding: 0.5rem;
 }
 
+/* Buttons */
+#change-image-btn {
+    display: none;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #0f4d92;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+nav:hover #change-image-btn {
+    display: block;
+}
+
 /* Main Content */
 .main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    background-color: #fff;
+    border-radius: 8px; /* Add some design elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main h2 {
@@ -96,21 +124,6 @@ nav::before {
     padding: 0 3px;
 }
 
-/* Buttons */
-#change-image-btn {
-    display: none;
-    margin-top: 3rem;
-    padding: 1rem;
-    background-color: #0f4d92;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-nav:hover #change-image-btn {
-    display: block;
-}
-
 /* Forms */
 .container {
     width: 100%;
@@ -118,6 +131,7 @@ nav:hover #change-image-btn {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure no content overflows */
 }
 
 .siteTitle {
@@ -126,6 +140,7 @@ nav:hover #change-image-btn {
     padding: 10px;
     color: white;
     background-color: #2960A0;
+    text-align: center; /* Reset alignment */
 }
 
 .pageTitle {
@@ -139,8 +154,7 @@ nav:hover #change-image-btn {
     padding: 20px;
 }
 
-#register_form,
-#login_form {
+#register_form, #login_form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -197,10 +211,8 @@ input {
 /* Birthdate Field */
 #birthdate {
     width: 100%;
-    padding: 8px;
-    border: none;
-    outline: none;
     display: flex;
+    gap: 5px;
     justify-content: space-between;
 }
 

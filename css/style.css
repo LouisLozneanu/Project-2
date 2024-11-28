@@ -169,17 +169,22 @@ nav:hover #change-image-btn {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* Ensure no content overflows */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .siteTitle {
-    width: 100%;
     margin: 0;
     padding: 10px;
     color: white;
     background-color: #2960A0;
     text-align: center;
-    /* Reset alignment */
 }
 
 .pageTitle {
@@ -254,6 +259,7 @@ input {
     display: flex;
     gap: 5px;
     justify-content: space-between;
+    border: 0;
 }
 
 #birthdate select {

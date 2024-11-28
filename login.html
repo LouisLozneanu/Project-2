@@ -12,43 +12,46 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="siteTitle">
-      <h1>Yale School of Art</h1>
-    </div>
-    <div class="formContainer">
-      <h1 class="pageTitle">Login</h1>
-      <form id="login_form" action="#null" method="post" onsubmit="return false;" novalidate="novalidate"
-        data-fw-form="1" autocomplete="off">
-        <!-- Email -->
-        <div class="input-group">
-          <span class="icon"><i class="fas fa-envelope"></i></span>
-          <input id="email" maxlength="64" name="email" size="48" style="width: 200px;" value="" type="email"
-            placeholder="Email" data-validate="{ required: true, format: 'email', help: 'Email address is required.' }"
-            autocomplete="off" spellcheck="false" class="maxlength_enabled" required="required">
-        </div>
-        <!-- Password -->
-        <div class="input-group">
-          <span class="icon"><i class="fas fa-lock"></i></span>
-          <input id="password" maxlength="64" name="password" size="48" style="width: 200px;" type="password"
-            placeholder="Password" value="" data-validate="{ required: true, help: 'Password is required.' }"
-            autocomplete="off" spellcheck="false" required="required">
-        </div>
-        <!-- Forgot Password Link -->
-        <div class="forgot-password">
-          <a href="/forgot-password">Forgot Password?</a>
-        </div>
-        <!-- Login Button -->
-        <button class="btn default" onclick="if (FW.Validate(this)) FW.Postback(this); return false;"
-          type="submit">Login</button>
-      </form>
-      <!-- Divider -->
-      <div class="divider">
-        <hr> Or
-        <hr>
+  <div class="center-container">
+    <div class="container">
+      <div class="siteTitle">
+        <h1>Yale School of Art</h1>
       </div>
-      <!-- Register Button -->
-      <button id="registerBtn" class="btn" onclick="window.location.href='/project-2/register.html'">Sign Up</button>
+      <div class="formContainer">
+        <h1 class="pageTitle">Login</h1>
+        <form id="login_form" action="#null" method="post" onsubmit="return false;" novalidate="novalidate"
+          data-fw-form="1" autocomplete="off">
+          <!-- Email -->
+          <div class="input-group">
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <input id="email" maxlength="64" name="email" size="48" style="width: 200px;" value="" type="email"
+              placeholder="Email"
+              data-validate="{ required: true, format: 'email', help: 'Email address is required.' }" autocomplete="off"
+              spellcheck="false" class="maxlength_enabled" required="required">
+          </div>
+          <!-- Password -->
+          <div class="input-group">
+            <span class="icon"><i class="fas fa-lock"></i></span>
+            <input id="password" maxlength="64" name="password" size="48" style="width: 200px;" type="password"
+              placeholder="Password" value="" data-validate="{ required: true, help: 'Password is required.' }"
+              autocomplete="off" spellcheck="false" required="required">
+          </div>
+          <!-- Forgot Password Link -->
+          <div class="forgot-password">
+            <a href="/project-2//forgot-password">Forgot Password?</a>
+          </div>
+          <!-- Login Button -->
+          <button class="btn default" onclick="if (FW.Validate(this)) FW.Postback(this); return false;"
+            type="submit">Login</button>
+        </form>
+        <!-- Divider -->
+        <div class="divider">
+          <hr> Or
+          <hr>
+        </div>
+        <!-- Register Button -->
+        <button id="registerBtn" class="btn" onclick="window.location.href='register.html'">Sign Up</button>
+      </div>
     </div>
   </div>
   <script src="/project-2/js/script.js" async defer></script>
